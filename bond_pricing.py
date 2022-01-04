@@ -12,10 +12,10 @@ def coupon_bond_price(par_value, coupon, market_rate, n):
 
 if __name__ == "__main__":
     par_value = int(input('Enter par value here'))  # par value
-    coupon = float(input('Enter coupon here'))    # coupon
+    coupon = float(input('Enter coupon rate here'))    # coupon rate
     n = int(input('Enter no. of years here'))   # years
     market_rate = float(input('Enter market rate here'))   #market rate
 
-print(f"Zero Coupon Price: {zero_bond_price(par_value, market_rate, n)}")
-print(f"Coupon Bond Price: {coupon_bond_price(par_value, coupon, market_rate, n)}")
+print(f"Zero Coupon Price: {round(zero_bond_price(par_value, market_rate, n), 4)}")
+print(f"Coupon Bond Price: {round(coupon_bond_price(par_value, coupon, market_rate, n), 4)}")
 
